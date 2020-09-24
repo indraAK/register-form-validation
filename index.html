@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+   <link rel="stylesheet" href="style.css">
+   <title>Form Validation</title>
+</head>
+
+<body>
+
+   <form class="form" id="form">
+      <div class="form__group">
+         <label for="name" class="form__label">Full name</label>
+         <input type="text" class="form__input" placeholder="Full name" id="name">
+         <small class="invalid"></small>
+      </div>
+      <div class="form__group">
+         <label for="email" class="form__label">Email</label>
+         <input type="text" class="form__input" placeholder="Email address" id="email">
+         <small class="invalid"></small>
+      </div>
+      <div class="form__group">
+         <label for="password" class="form__label">Password</label>
+         <input type="password" class="form__input" placeholder="Password" id="password">
+         <small class="invalid"></small>
+      </div>
+      <div class="form__group">
+         <label for="confirm-password" class="form__label">Confirm password</label>
+         <input type="password" class="form__input" placeholder="Password" id="confirm-password">
+         <small class="invalid"></small>
+      </div>
+      <div class="form__group">
+         <div class="form__check-group">
+            <input type="checkbox" class="form__checkbox" id="agree">
+            <label for="agree" class="form__label">Agree to terms and conditions</label>
+            <small class="invalid"></small>
+         </div>
+      </div>
+      <button type="submit" class="btn-submit">Register &rarr;</button>
+   </form>
+
+   <script src="./script.js"></script>
+</body>
+
+</html>

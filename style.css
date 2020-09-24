@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap");
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   background-color: rebeccapurple;
+   font-family: "Source Sans Pro", sans-serif;
+   font-weight: 400;
+   font-size: 1.6rem;
+   line-height: 1.5;
+   min-height: 100vh;
+   padding: 3rem 2rem;
+   display: grid;
+   place-items: center;
+}
+
+.form {
+   background-color: white;
+   width: 100%;
+   max-width: 50rem;
+   padding: 4rem;
+   border-radius: 3px;
+   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.25);
+}
+
+.form__group:not(:last-child) {
+   margin-bottom: 1.5rem;
+}
+
+.form__label {
+   color: #424242;
+   display: inline-block;
+   margin-bottom: 0.7rem;
+}
+
+.form__input {
+   font-family: inherit;
+   font-size: 1.5rem;
+   display: block;
+   width: 100%;
+   padding: 1.3rem 1.5rem;
+   border: 1px solid #d6d6d6;
+   border-radius: 3px;
+}
+
+.form__input.invalid {
+   border-color: #ff3838;
+}
+
+.form__input.valid {
+   border-color: #3de23d;
+}
+
+.form__input:focus {
+   outline: 0;
+   color: #495057;
+   border-color: rebeccapurple;
+   box-shadow: 0 0 0 0.15rem rgba(102, 51, 153, 0.25);
+}
+
+.form__check-group {
+   display: flex;
+   flex-direction: column;
+   padding-left: 2.5rem;
+   margin-top: 2rem;
+   position: relative;
+}
+
+.form__check-group .form__checkbox {
+   position: absolute;
+   top: 5px;
+   left: 0;
+}
+
+.form__check-group .form__label {
+   font-size: 1.5rem;
+   margin-bottom: 0;
+   user-select: none;
+   -webkit-user-select: none;
+}
+
+.invalid {
+   color: #ff3838;
+}
+
+.btn-submit {
+   background-color: rebeccapurple;
+   color: #e7e7e7;
+   cursor: pointer;
+   outline: 0;
+   border: 1px solid transparent;
+   border-radius: 5rem;
+   font-family: inherit;
+   font-size: 1.7rem;
+   font-weight: 600;
+   letter-spacing: 1px;
+   display: block;
+   width: 100%;
+   padding: 1.7rem 1.5rem;
+   -webkit-user-select: none;
+   margin-top: 3rem;
+}
+
+.btn-submit:focus {
+   border-color: rebeccapurple;
+   box-shadow: 0 0 0 0.2rem rgba(102, 51, 153, 0.4);
+}
+
+@media screen and (max-width: 600px) {
+   .form {
+      padding: 3rem;
+   }
+
+   .form__input {
+      font-size: 1.5rem;
+      padding: 1.2rem 1.3rem;
+   }
+
+   .form__group:not(:last-child) {
+      margin-bottom: 1.2rem;
+   }
+
+   .form__check-group .form__label {
+      font-size: 1.4rem;
+      margin-top: 1px;
+   }
+}
